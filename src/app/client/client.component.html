@@ -1,0 +1,20 @@
+<p>client works!</p>
+<a routerLink="/home">To Home</a>
+<div id="container">
+<ul>
+  <li *ngFor = "let phone of phones">
+    <p>{{phone.name}}</p>
+    <p>{{phone.count}}</p>
+    <button (click)="add(phone.name)"><p>Купить</p></button>
+  </li>
+</ul>
+</div>
+<p>------------------------------------------------</p>
+<ul>
+  <li *ngFor = "let phone of cart">
+    <p>{{phone}}</p>
+
+  </li>
+</ul>
+
+
